@@ -9,9 +9,16 @@
     color: black;
 }
 
+h1 { 
+    text-align: center;
+}
+
 header{
     background-color: #2c3e50 ;
-    min-height: 90px;
+}
+
+section{
+    margin-bottom: 50px;
 }
 
 .title, .navigation{
@@ -21,7 +28,7 @@ header{
     align-items: center;
 }
 
-.hero{
+.hero, .about{
     background-color: #1abc9c;
 }
 
@@ -34,5 +41,17 @@ header{
 
 .portfolio .row .col-12{
     border: 1px solid red;
-    background-color: gold;
+}
+
+.portfolio .row{
+    row-gap: 10px;
+}
+
+.about [class *= "col"]{
+    min-height: 100px;
+    border: 1px solid red;
+}
+
+.about-download{
+    text-align: center;
 }
