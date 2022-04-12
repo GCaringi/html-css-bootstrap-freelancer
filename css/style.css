@@ -1,25 +1,88 @@
-/*--------------
-    Debug Zone
-----------------*/
-.debug{
-    color: white;
-}
-
-.debug section{
-    color: black;
-}
+/*-------------
+     Typo
+--------------*/
 
 h1 { 
     text-align: center;
 }
 
+/*-----------
+    Header
+-------------*/
+
 header{
+    color: #fff;
     background-color: #2c3e50 ;
 }
 
-main section{
-    margin-bottom: 50px;
+header i{
+    color: white;
 }
+
+.main-nav ul{
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 10px;
+    list-style: none;
+    margin: 0px;
+}
+
+.main-nav ul a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.navigation, .logo{
+    align-self: center;
+}
+
+.navigation{
+    text-align: right ;
+}
+
+/*----------
+    Main
+-----------*/
+.hero{
+    color: #fff;
+}
+
+.decoration{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.bar-white{
+    background-color: white;
+}
+
+.bar-black{
+    background-color: black;
+
+}
+
+.bar{
+    height: 3px;
+    width: 30%;
+    max-width: 150px;
+}
+
+.decoration .star{
+    margin: 0px 10px;
+    font-size: 24px;
+}
+
+.cards{
+    border-radius: 20px;
+}
+
+
+
+/*-----------
+    Footer
+-------------*/
 
 footer .credits{
     color: white;
@@ -40,23 +103,10 @@ footer .copyright{
     background-color: #3a546d;
 }
 
-.title, .navigation{
-    display: flex;
-    border: 1px solid red;
-    min-height: 45px;
-    align-items: center;
-}
-
 .hero, .about{
     background-color: #1abc9c;
 }
 
-.hero .container{
-    /* max-width: 600px; */
-    /* margin: 0 auto; */
-    min-height: 500px;
-    border: 1px solid red;
-}
 
 .portfolio .row .col-12{
     border: 1px solid red;
