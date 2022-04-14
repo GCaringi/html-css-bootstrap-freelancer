@@ -1,9 +1,57 @@
 /*-------------
+     Commons
+--------------*/
+.decoration{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.bar-white{
+    background-color: white;
+}
+
+.bar-black{
+    background-color: black;
+}
+
+.container-cs{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/*-------------
+    Buttons
+--------------*/
+
+.btn_cs{
+    color: #fff;
+    background-color: transparent; 
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 20px 0px;
+}
+
+/*-------------
      Typo
 --------------*/
 
 h1 { 
+    text-transform: uppercase;
     text-align: center;
+}
+
+.hero h2{
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.hero p{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
 }
 
 /*-----------
@@ -47,22 +95,6 @@ header i{
     color: #fff;
 }
 
-.decoration{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.bar-white{
-    background-color: white;
-}
-
-.bar-black{
-    background-color: black;
-
-}
-
 .bar{
     height: 3px;
     width: 30%;
@@ -78,9 +110,17 @@ header i{
     row-gap: 20px;
 }
 
+.col-12{
+    overflow: hidden;
+}
+
+.portfolio-item{
+    border-radius: 20px;
+    overflow: hidden;
+}
+
 .portfolio-item img{
     display: block;
-    border-radius: 20px;
 }
 
 .portfolio-item::after{
@@ -95,13 +135,34 @@ header i{
     height: 100%;
     top: 0px;
     left: 0px;
-    border-radius: 20px;
+    z-index: 1;
 
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 
     opacity: 0;
+}
+
+.about i, .about h1, .about p{
+    color: white;
+}
+
+/*-----------
+    Form
+-------------*/
+
+.form-row{
+    width: 100%;
+    border: none;
+    padding-bottom: 10px ;
+    border-bottom: 1px solid grey;
+    margin-bottom: 20px;
+}
+
+.form-row.message-box{
+    padding-bottom: 50px;
 }
 
 /*-----------
@@ -126,12 +187,6 @@ footer .copyright{
     background-color: #1abc9c;
 }
 
-
-
-.about [class *= "col"]{
-    min-height: 100px;
-    border: 1px solid red;
-}
 
 .about-download{
     text-align: center;
