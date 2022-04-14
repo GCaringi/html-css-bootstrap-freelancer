@@ -80,6 +80,10 @@ i, .about{
 i.black{
     color: #000;
 }
+
+.text-signed{
+    color: #1abc9c;
+}
 /*-----------
     Header
 -------------*/
@@ -210,4 +214,9 @@ footer .copyright{
 
 .portfolio .row [class ^="col"]:hover .portfolio-item::after{
     opacity: 1;
+}
+
+.text-signed:hover{
+    cursor: pointer;
+    text-decoration: underline;
 }
