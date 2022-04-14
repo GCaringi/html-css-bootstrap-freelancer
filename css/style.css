@@ -8,6 +8,17 @@
     align-items: center;
 }
 
+.decoration .star{
+    margin: 0px 10px;
+    font-size: 24px;
+}
+
+.decoration .bar{
+    height: 3px;
+    width: 30%;
+    max-width: 150px;
+}
+
 .bar-white{
     background-color: white;
 }
@@ -38,6 +49,10 @@
     background-color: #1abc9c;
 }
 
+.hero, .about{
+    background-color: #1abc9c;
+}
+
 /*-------------
      Typo
 --------------*/
@@ -58,10 +73,13 @@ h1 {
     font-weight: 500;
 }
 
-.text-signed{
-    color: #1abc9c;
+i, .about{
+    color: #fff;    
 }
 
+i.black{
+    color: #000;
+}
 /*-----------
     Header
 -------------*/
@@ -69,10 +87,6 @@ h1 {
 header{
     color: #fff;
     background-color: #2c3e50 ;
-}
-
-header i{
-    color: white;
 }
 
 .main-nav ul{
@@ -103,32 +117,13 @@ header i{
     color: #fff;
 }
 
-.bar{
-    height: 3px;
-    width: 30%;
-    max-width: 150px;
-}
-
-.decoration .star{
-    margin: 0px 10px;
-    font-size: 24px;
-}
-
 .portfolio .row{
     row-gap: 20px;
-}
-
-.col-12{
-    overflow: hidden;
 }
 
 .portfolio-item{
     border-radius: 20px;
     overflow: hidden;
-}
-
-.portfolio-item img{
-    display: block;
 }
 
 .portfolio-item::after{
@@ -137,6 +132,7 @@ header i{
     font-weight: 900;
     color: #fff;
     font-size: 60px;
+
     position: absolute;
     background-color: #1abc9ce9;
     width: 100%;
@@ -148,13 +144,9 @@ header i{
     display: flex;
     justify-content: center;
     align-items: center;
+    
     cursor: pointer;
-
     opacity: 0;
-}
-
-.about i, .about h1, .about p{
-    color: white;
 }
 
 /*-----------
@@ -182,6 +174,7 @@ header i{
     list-style: none;
     justify-content: center;
     column-gap: 20px;
+    padding: 0px;
 }
 
 .circle-box{
@@ -205,14 +198,10 @@ footer .credits{
 }
 
 footer .copyright{
-    text-align: center;
-    background-color: #2c3e50;
     color: white;
+    background-color: #2c3e50;
+    text-align: center;
     padding: 30px 0px;
-}
-
-.hero, .about{
-    background-color: #1abc9c;
 }
 
 /*--------------------
